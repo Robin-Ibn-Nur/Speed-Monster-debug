@@ -5,6 +5,16 @@ html {
     height: 100%;
     margin: 0;
     font-family: Arial;
+    background-color: rgb(34, 2, 2);
+}
+
+/* style header */
+.blog {
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+    font-weight: 900;
+    font-style: oblique;
 }
 
 /* Style tab links */
