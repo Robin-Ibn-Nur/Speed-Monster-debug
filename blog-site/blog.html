@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Monster Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- copied from w3school -->
+    <h1>This is a blog site</h1>
+    <main>
+        <button class="tablink" onclick="openPage('Home', this, 'red')">Differences Between <br> <b>Local Storage &
+                Session Storage</b> </button>
+        <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Differences Between <br>
+            <b>Global Scope & Block Scope</b> </button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">How does <br> <b>JavaScript event Loop
+                work</b> </button>
+        <button class="tablink" onclick="openPage('About', this, 'orange')">How many ways to get <br> <b>Undefine</b>
+            ?</button>
+
+        <div id="Home" class="tabcontent">
+            <h1>Storage</h1>
+            <p>আমরা প্রতিনিয়ত ওয়েবসাইট ব্যবহার করে থাকি। ওয়েবসাইট ব্যবহার এর সময় কিছু ডাটা আমাদের ব্রাউজার এ থেকে
+                যায়।
+            </p>
+            <p>২ ধরণের ডাটা আমাদের ব্রাউজার এ জমা থাকে।</p>
+            <ol>
+                <li>
+                    <h3>Local Storage</h3>
+                    <p>Local Storage আমাদের ব্রাউজ করা সকল ওয়েবসাইট এর ডাটা স্থায়ী ভাবে আমাদের ব্রাউজারে সংরক্ষণ করে
+                        রাখে।</p>
+                </li>
+                <li>
+                    <h3>Session Storage</h3>
+                    <p>Session Storage আমাদের single ট্যাব এর ডাটা গুলো সংরক্ষণ করে রাখে। যা পরবর্তীতে ট্যাব বন্ধ করার
+                        সাথে সাথে Session
+                        Storage খালি হয়ে যায়। অর্থাৎ ট্যাব বন্ধ করার সাথে সাথে Session Storage মুছে যায়।</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div id="News" class="tabcontent">
+            <h3>Scope</h3>
+            <p>Some news this fine day!</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+    </main>
+    <script src="blog.js"></script>
+</body>
+
+</html>
