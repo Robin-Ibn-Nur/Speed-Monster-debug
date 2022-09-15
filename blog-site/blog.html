@@ -24,39 +24,115 @@
 
         <div id="Home" class="tabcontent">
             <h1>Storage</h1>
-            <p>আমরা প্রতিনিয়ত ওয়েবসাইট ব্যবহার করে থাকি। ওয়েবসাইট ব্যবহার এর সময় কিছু ডাটা আমাদের ব্রাউজার এ থেকে
-                যায়।
+            <p>We use the website regularly. During the use of the website, some data remains in our browser.
             </p>
-            <p>২ ধরণের ডাটা আমাদের ব্রাউজার এ জমা থাকে।</p>
+            <p> <b>2 types of data are stored in our browser.</b></p>
             <ol>
                 <li>
                     <h3>Local Storage</h3>
-                    <p>Local Storage আমাদের ব্রাউজ করা সকল ওয়েবসাইট এর ডাটা স্থায়ী ভাবে আমাদের ব্রাউজারে সংরক্ষণ করে
-                        রাখে।</p>
+                    <p>Local Storage permanently stores the data of all the websites we browse in our browser.</p>
                 </li>
                 <li>
                     <h3>Session Storage</h3>
-                    <p>Session Storage আমাদের single ট্যাব এর ডাটা গুলো সংরক্ষণ করে রাখে। যা পরবর্তীতে ট্যাব বন্ধ করার
-                        সাথে সাথে Session
-                        Storage খালি হয়ে যায়। অর্থাৎ ট্যাব বন্ধ করার সাথে সাথে Session Storage মুছে যায়।</p>
+                    <p>Session Storage stores our single tab's data. After that, the Session Storage becomes empty as
+                        soon as the tab is
+                        closed. Session Storage is deleted as soon as the tab is closed.</p>
                 </li>
             </ol>
 
         </div>
 
         <div id="News" class="tabcontent">
-            <h3>Scope</h3>
-            <p>Some news this fine day!</p>
+            <h1>Scope</h1>
+            <p>The scope of a variable defines where it's accessible in a program based on where it was created. Just
+                because we create
+                a variable in one place in our program doesn't mean it's going to be accessible from anywhere in our
+                script.</p>
+            <p><b>There are 2 types of variable scope will be disscussed.</b></p>
+            <ol>
+                <li>Global Scope</li>
+                <p>The variables defined outside of any function or curly brackets {} are known as global variables and
+                    have global scope.
+                    Global scope means that the variables can be accessed from any part of that program, any function or
+                    conditional state
+                    can access that variable.</p>
+                <p><b>Note:</b> It is not a good practice to use global variables when they are not needed as every code
+                    block will have access to
+                    those variables.</p>
+                <p>The keyword <b>var</b> is used to define Global variable</p>
+                <li>Local Scope</li>
+                <p>If we have to define some variables inside curly brackets {} or inside a specific function then
+                    those variables are
+                    called local variables. The local variables have a very confined scope which is called the local
+                    scope But, with the
+                    release of ES6, the local scope was further broken down into two different scopes:</p>
+                <ul>
+                    <li>Function scope</li>
+                    <p>The function scope is the accessibility of the variables defined inside a function, these
+                        variables cannot be accessed
+                        from any other function or even outside the function in the main file.</p>
+                    <p><b>However</b>, if we try to access this variable outside of the function then we get an error:
+                    </p>
+                    <li>Block scope.</li>
+                    <p>Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the
+                        variables inside the
+                        curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or
+                        something else. We are only
+                        allowed to refer to these variables from within the curly brackets {}</p>
+                    <p>The keywords <b>let</b> and <b>const</b> are used to define block variables.</p>
+                </ul>
+            </ol>
         </div>
 
         <div id="Contact" class="tabcontent">
-            <h3>Contact</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
+            <h1>JS even Loop</h1>
+            <p>JavaScript is a single-threaded programming language. This means that JavaScript can do only one thing at
+                a single point
+                in time.</p>
+
+            <p>The JavaScript engine executes a script from the top of the file and works its way down. It creates the
+                execution
+                contexts, pushes, and pops functions onto and off the call stack in the execution phase.</p>
+
+            <p>If a function takes a long time to execute, we cannot interact with the web browser during the
+                function's execution
+                because the page hangs.</p>
+
+            <p></p> function that takes a long time to complete is called a blocking function. Technically, a blocking
+            function blocks all
+            the interactions on the webpage, such as mouse click</p>
         </div>
 
         <div id="About" class="tabcontent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
+            <h3>Undefine</h3>
+            <p>In JavaScript, three properties, <b>undefined</b>, <b>null</b>, and <b>NAN</b></p>
+            <p>The undefined property in JavaScript suggests that a variable has not been assigned a value or not
+                declared at all. The
+                global undefined property describes the primitive value undefined. It is one of JavaScript's primitive
+                data types.
+
+            </p>
+            <p>A variable that has not been assigned a value is of type undefined. A method or statement also returns
+                undefined if the
+                variable that is being evaluated does not have an assigned value. A method returns undefined if a value
+                was not
+                returned.</p>
+            <p>To check if the value is undefined in JavaScript, use the typeof operator. The typeof operator returns a
+                string
+                indicating the type of the unevaluated operand. Use typeof operator with if condition and compare the
+                value of the
+                variable using undefined, and you will get your result</p>
+            <code>if (typeof data === "undefined") { <br>
+                console.log("data is undefined") <br>
+                } else { <br>
+                console.log("data is defined")
+                }</code> <br> <br>
+            <output>data is undefined</output>
+            <p>In this example, we are checking if the data variable is undefined or not. We have not assigned any value
+                to a data
+                variable previously, so it returns undefined. The undefined comes into a picture when any variable is
+                defined already
+                but has not been assigned any value.</p>
         </div>
     </main>
     <script src="blog.js"></script>
