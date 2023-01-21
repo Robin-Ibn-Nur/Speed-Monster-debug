@@ -37,5 +37,5 @@ function displayHistory() {
     
     histories.appendChild(newRow);
   });
-  // window.localStorage.clear();
+  window.localStorage.clear();
 }
